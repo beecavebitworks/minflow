@@ -1,0 +1,13 @@
+2015/04/03
+cap
+ - Fix final timestamp for file mode.
+ - Per-minute stats (sum of second-stats) for each flow type
+ - vlans
+ - ifdrop/kdrop stats dont seem to be working
+stats
+ - vlans, etc.
+ - DNS
+ - Flowtypes
+anomalies
+ - SPOOF/MIM: check MAC addr changes on new stream (done) and end stream
+

@@ -20,14 +20,18 @@ The design requires a configurable pre-allocation system.  At initialization tim
   As with [SiLK] (http://tools.netsa.cert.org/silk/), high level traffic summary stats are kept for the following categories:
  - **in**  Incoming 
  - **out** Outgoing 
- - **inweb** Incoming web  (80, 443, 8080)
+ - **inweb** Incoming web
  - **outweb** Outgoing web
  - **internal** Internal LAN
 
   ### Address and Stream Map
   The Top-N and Anomaly sections only refer to streams and addresses by an ID mapped to the tables listed in this section.
-  Addresses have fields: IID, isInternal, _ipv6 or v4 address_, MAC address
-  Streams have fields:IID, flowFlags, IpProto, LeftAddrID,LeftPort,RightAddrID,RightPort,Label string
+  
+  Addresses have fields:
+    IID, isInternal, _ipv6 or v4 address_, MAC address
+  
+  Streams have fields:
+    IID, flowFlags, IpProto, LeftAddrID,LeftPort,RightAddrID,RightPort,Label string
 
   ### Top-N data
   
